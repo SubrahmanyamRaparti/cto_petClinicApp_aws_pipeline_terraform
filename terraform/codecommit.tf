@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 
 resource "aws_codecommit_repository" "cto_codecommit" {
-  repository_name = "${local.prefix}-repository"
+  repository_name = "${var.prefix}-repository"
   description     = "Java application"
   default_branch  = "main"
   tags            = local.common_tags
