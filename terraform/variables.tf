@@ -11,3 +11,9 @@ variable "project" {
   default     = "Pet Clinic Java Application"
   type        = string
 }
+
+variable "source_repo_branch" {
+  description = "Source branch name"
+  default     = "main"
+  type        = string
+}
