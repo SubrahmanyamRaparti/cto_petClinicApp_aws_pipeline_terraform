@@ -1,9 +1,10 @@
 locals {
-  prefix = "${var.prefix}-{terraform.workspace}"
+  prefix = "${var.prefix}-${terraform.workspace}"
   common_tags = {
-    "Project Name"         = var.project
-    "Environment"          = terraform.workspace
-    "Infrastructure owner" = "Subrahmanyam"
-    "Contact email"        = "rv.subrahmanyam1@gmail.com"
+    ProjectName         = var.project
+    Environment         = terraform.workspace
+    InfrastructureOwner = "Subrahmanyam"
+    CreatedOn           = timestamp()
+    ContactEmail        = "rv.subrahmanyam1@gmail.com"
   }
 }

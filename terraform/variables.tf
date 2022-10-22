@@ -2,7 +2,7 @@ variable "aws_region" {}
 
 variable "prefix" {
   description = "project prefix"
-  default     = "pet-clinic"
+  default     = "pet-clinic-app"
   type        = string
 }
 
