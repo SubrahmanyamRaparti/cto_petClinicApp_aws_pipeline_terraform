@@ -4,7 +4,7 @@ locals {
     ProjectName         = var.project
     Environment         = terraform.workspace
     InfrastructureOwner = "Subrahmanyam"
-    CreatedOn           = timestamp()
+    # CreatedOn           = timestamp()
     ContactEmail        = "rv.subrahmanyam1@gmail.com"
   }
 }
