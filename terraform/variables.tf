@@ -17,3 +17,9 @@ variable "source_repo_branch" {
   default     = "main"
   type        = string
 }
+
+variable "family" {
+  description = "Family of the Task Definition"
+  default     = "petclinic"
+  type        = string
+}
